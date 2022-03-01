@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+connect_str = "DefaultEndpointsProtocol=https;AccountName=picstoresa;AccountKey=kC3SxeiAxAIwk4VfLCx+DE+TiUy4dV/VmGcXrmfv0XYm/ze6nT9Q4RlpNM9iUxVD45lhji7VOKqGFYHqU9ztjg==;EndpointSuffix=core.windows.net"
 container_name = 'photos'
 
 blob_service_client = BlobServiceClient.from_connection_string(conn_str=connect_str)
